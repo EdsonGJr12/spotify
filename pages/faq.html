@@ -1,182 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://open.spotifycdn.com/cdn/images/favicon.5cb2bd30.ico" type="image/x-icon"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://open.spotifycdn.com/cdn/images/favicon.5cb2bd30.ico"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="../css/theme.css" />
-    <link rel="stylesheet" href="../css/faq.css"/>
+    <link rel="stylesheet" href="../css/faq.css" />
     <title>Spotify - Web player</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <main>
+      <main>
+        <header>
+          <div class="logo-container">
+            <img
+              class="logo"
+              src="../assets/svg/logo.svg"
+              alt="Logo do spotify"
+            />
+          </div>
+          <div class="subscribe-login-container">
+            <a class="subscribe-button" href="#"> Inscreva-se </a>
+            <a class="login-button" href="#"> Entrar </a>
+          </div>
+        </header>
+
+        <div class="content">
+          <div class="faq-categories-container">
             <header>
-                <div class="logo-container">
-                    <img class="logo" src="../assets/svg/logo.svg" alt="Logo do spotify" /> 
-                </div>
-                <div class="subscribe-login-container">
-                    <a class="subscribe-button" href="#">
-                        Inscreva-se
-                    </a>
-                    <a class="login-button" href="#">
-                        Entrar
-                    </a>
-                </div>
+              <h3>ATENDIMENTO DO SPOTIFY</h3>
             </header>
-
-            <div class="content">
-                <div class="faq-categories-container">
-                    <header>
-                        <h3>ATENDIMENTO DO SPOTIFY</h3>
-                    </header>
-                    <div class="faq-help-container">
-                        <p>
-                            Como podemos ajudar?
-                        </p>
-                        <h1>
-                            <a class="faq-link-login" href="#">Faça log in</a> para ter ajuda mais rápido
-                        </h1>
-                    </div>
-                    <div class="faq-barra-de-busca-container">
-                        <img class="logo" src="../assets/svg/search.svg" alt="Lupa de pesquisa" /> 
-                        <input type="text" aria-label="Buscar" placeholder="Buscar" autocomplete="off" class="faq-barra-de-busca" />
-                    </div>
-
-                    <div class="faq-categories">
-                        <div class="faq-categorie-card" id="card-ajuda-com-pagamentos">
-                            <img class="card-img" src="../assets/img/ajuda-com-pagamentos.webp" alt="Imagem">
-                            <div class="card-details">
-                                <div class="title">
-                                    Ajuda com pagamentos
-                                </div>
-                            </div>
-                        </div>
-                        <div class="faq-categorie-card" id="card-ajuda-com-o-plano">
-                            <img class="card-img" src="../assets/img/ajuda-com-o-plano.webp" alt="Imagem">
-                            <div class="card-details">
-                                <div class="title">
-                                    Ajuda com o plano
-                                </div>
-                            </div>
-                        </div>
-
-                       <div class="faq-categorie-card" id="card-ajuda-com-o-app">
-                            <img class="card-img" src="../assets/img/ajuda-com-o-app.webp" alt="Imagem">
-                            <div class="card-details">
-                                <div class="title">
-                                    Ajuda com o app
-                                </div>
-                            </div>
-                        </div>
-
-                       <div class="faq-categorie-card" id="card-ajuda-com-dispositivos">
-                            <img class="card-img" src="../assets/img/ajuda-com-dispositivos.webp" alt="Imagem">
-                            <div class="card-details">
-                                <div class="title">
-                                    Ajuda com dispositivos
-                                </div>
-                            </div>
-                        </div>
-
-                       <div class="faq-categorie-card" id="card-privacidade-e-seguranca">
-                            <img class="card-img" src="../assets/img/privacidade-e-seguranca.png" alt="Imagem">
-                            <div class="card-details">
-                                <div class="title">
-                                    Privacidade e segurança
-                                </div>
-                            </div>
-                        </div>
-
-                       <div class="faq-categorie-card" id="card-ajuda-com-a-conta">
-                            <img class="card-img" src="../assets/img/ajuda-com-a-conta.png" alt="Imagem">
-                            <div class="card-details">
-                                <div class="title">
-                                    Ajuda com a conta
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="faq-categories-container">
-                    <header>
-                        <h3>Ajuda rápida</h3>
-                    </header>
-                    <div class="faq-categorie">
-                        <div class="faq-categorie-card">
-                            <img class="card-img" src="https://i.scdn.co/image/ab67706f000000020ef267628489117c4e467a8e" alt="Imagem">
-                            <div class="card-details">
-                                <div class="title">
-                                    Today's Top Hits
-                                </div>
-                                <div class="detail">
-                                    OneRepublic are on top of the Hottest 50!
-                                </div>
-                            </div>
-                        </div>
-                        <div class="faq-categorie-card">
-                            <img class="card-img" src="https://i.scdn.co/image/ab67706f000000020ef267628489117c4e467a8e" alt="Imagem">
-                            <div class="card-details">
-                                <div class="title">
-                                    Today's Top Hits
-                                </div>
-                                <div class="detail">
-                                    OneRepublic are on top of the Hottest 50!
-                                </div>
-                            </div>
-                        </div>
-                       <div class="faq-categorie-card">
-                            <img class="card-img" src="https://i.scdn.co/image/ab67706f000000020ef267628489117c4e467a8e" alt="Imagem">
-                            <div class="card-details">
-                                <div class="title">
-                                    Today's Top Hits
-                                </div>
-                                <div class="detail">
-                                    OneRepublic are on top of the Hottest 50!
-                                </div>
-                            </div>
-                        </div>
-                       <div class="faq-categorie-card">
-                            <img class="card-img" src="https://i.scdn.co/image/ab67706f000000020ef267628489117c4e467a8e" alt="Imagem">
-                            <div class="card-details">
-                                <div class="title">
-                                    Today's Top Hits
-                                </div>
-                                <div class="detail">
-                                    OneRepublic are on top of the Hottest 50!
-                                </div>
-                            </div>
-                        </div>
-                       <div class="faq-categorie-card">
-                            <img class="card-img" src="https://i.scdn.co/image/ab67706f000000020ef267628489117c4e467a8e" alt="Imagem">
-                            <div class="card-details">
-                                <div class="title">
-                                    Today's Top Hits
-                                </div>
-                                <div class="detail">
-                                    OneRepublic are on top of the Hottest 50!
-                                </div>
-                            </div>
-                        </div>
-                       <div class="faq-categorie-card">
-                            <img class="card-img" src="https://i.scdn.co/image/ab67706f000000020ef267628489117c4e467a8e" alt="Imagem">
-                            <div class="card-details">
-                                <div class="title">
-                                    Today's Top Hits
-                                </div>
-                                <div class="detail">
-                                    OneRepublic are on top of the Hottest 50!
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="faq-help-container">
+              <p>Como podemos ajudar?</p>
+              <h1>
+                <a class="faq-link-login" href="#">Faça log in</a> para ter
+                ajuda mais rápido
+              </h1>
             </div>
-        </main>
-    </div>
-</body>
+            <div class="faq-barra-de-busca-container">
+              <img
+                class="logo"
+                src="../assets/svg/search.svg"
+                alt="Lupa de pesquisa"
+              />
+              <input
+                type="text"
+                aria-label="Buscar"
+                placeholder="Buscar"
+                autocomplete="off"
+                class="faq-barra-de-busca"
+              />
+            </div>
 
+            <div class="faq-categories">
+              <div class="faq-categorie-card" id="card-ajuda-com-pagamentos">
+                <img
+                  class="card-img"
+                  src="../assets/img/ajuda-com-pagamentos.webp"
+                  alt="Imagem"
+                />
+                <div class="card-details">
+                  <div class="title">Ajuda com pagamentos</div>
+                </div>
+              </div>
+              <div class="faq-categorie-card" id="card-ajuda-com-o-plano">
+                <img
+                  class="card-img"
+                  src="../assets/img/ajuda-com-o-plano.webp"
+                  alt="Imagem"
+                />
+                <div class="card-details">
+                  <div class="title">Ajuda com o plano</div>
+                </div>
+              </div>
+
+              <div class="faq-categorie-card" id="card-ajuda-com-o-app">
+                <img
+                  class="card-img"
+                  src="../assets/img/ajuda-com-o-app.webp"
+                  alt="Imagem"
+                />
+                <div class="card-details">
+                  <div class="title">Ajuda com o app</div>
+                </div>
+              </div>
+
+              <div class="faq-categorie-card" id="card-ajuda-com-dispositivos">
+                <img
+                  class="card-img"
+                  src="../assets/img/ajuda-com-dispositivos.webp"
+                  alt="Imagem"
+                />
+                <div class="card-details">
+                  <div class="title">Ajuda com dispositivos</div>
+                </div>
+              </div>
+
+              <div class="faq-categorie-card" id="card-privacidade-e-seguranca">
+                <img
+                  class="card-img"
+                  src="../assets/img/privacidade-e-seguranca.png"
+                  alt="Imagem"
+                />
+                <div class="card-details">
+                  <div class="title">Privacidade e segurança</div>
+                </div>
+              </div>
+
+              <div class="faq-categorie-card" id="card-ajuda-com-a-conta">
+                <img
+                  class="card-img"
+                  src="../assets/img/ajuda-com-a-conta.png"
+                  alt="Imagem"
+                />
+                <div class="card-details">
+                  <div class="title">Ajuda com a conta</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-categories-container">
+            <header>
+              <h3>Ajuda rápida</h3>
+            </header>
+            <div class="faq-categorie">
+              <div class="faq-categorie-card">
+                <img
+                  class="card-img"
+                  src="https://i.scdn.co/image/ab67706f000000020ef267628489117c4e467a8e"
+                  alt="Imagem"
+                />
+                <div class="card-details">
+                  <div class="title">Today's Top Hits</div>
+                  <div class="detail">
+                    OneRepublic are on top of the Hottest 50!
+                  </div>
+                </div>
+              </div>
+              <div class="faq-categorie-card">
+                <img
+                  class="card-img"
+                  src="https://i.scdn.co/image/ab67706f000000020ef267628489117c4e467a8e"
+                  alt="Imagem"
+                />
+                <div class="card-details">
+                  <div class="title">Today's Top Hits</div>
+                  <div class="detail">
+                    OneRepublic are on top of the Hottest 50!
+                  </div>
+                </div>
+              </div>
+              <div class="faq-categorie-card">
+                <img
+                  class="card-img"
+                  src="https://i.scdn.co/image/ab67706f000000020ef267628489117c4e467a8e"
+                  alt="Imagem"
+                />
+                <div class="card-details">
+                  <div class="title">Today's Top Hits</div>
+                  <div class="detail">
+                    OneRepublic are on top of the Hottest 50!
+                  </div>
+                </div>
+              </div>
+              <div class="faq-categorie-card">
+                <img
+                  class="card-img"
+                  src="https://i.scdn.co/image/ab67706f000000020ef267628489117c4e467a8e"
+                  alt="Imagem"
+                />
+                <div class="card-details">
+                  <div class="title">Today's Top Hits</div>
+                  <div class="detail">
+                    OneRepublic are on top of the Hottest 50!
+                  </div>
+                </div>
+              </div>
+              <div class="faq-categorie-card">
+                <img
+                  class="card-img"
+                  src="https://i.scdn.co/image/ab67706f000000020ef267628489117c4e467a8e"
+                  alt="Imagem"
+                />
+                <div class="card-details">
+                  <div class="title">Today's Top Hits</div>
+                  <div class="detail">
+                    OneRepublic are on top of the Hottest 50!
+                  </div>
+                </div>
+              </div>
+              <div class="faq-categorie-card">
+                <img
+                  class="card-img"
+                  src="https://i.scdn.co/image/ab67706f000000020ef267628489117c4e467a8e"
+                  alt="Imagem"
+                />
+                <div class="card-details">
+                  <div class="title">Today's Top Hits</div>
+                  <div class="detail">
+                    OneRepublic are on top of the Hottest 50!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>

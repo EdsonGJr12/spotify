@@ -9,21 +9,21 @@
     overflow-x: hidden;
 }
 
-.container main { 
+.container main {
 
-    background-color: var(--secondary); 
+    background-color: var(--secondary);
     /* background-color: blue; */
     position: relative;
     left: var(--aside-width);
-    width: calc(100% - var(--aside-width)); 
+    width: calc(100% - var(--aside-width));
     height: 100%;
 
     display: flex;
     flex-direction: column;
-    flex: 1; 
+    flex: 1;
 }
 
-aside {   
+aside {
     position: fixed;
     width: var(--aside-width);
     height: 100%;
@@ -32,14 +32,14 @@ aside {
     overflow-x: hidden;
 }
 
- 
-main > header {
+
+main>header {
     position: fixed;
     top: 0;
-    
+
     width: calc(100% - var(--aside-width));
-    background-color: var(--secondary-opacity); 
-    height: 65px; 
+    background-color: var(--secondary-opacity);
+    height: 65px;
 
     display: flex;
     flex-direction: row;
@@ -53,7 +53,7 @@ main > header {
 
 .content {
     position: relative;
-    top: 100px; 
+    top: 100px;
 
     background-color: var(--secondary);
 
@@ -70,8 +70,8 @@ main > header {
 }
 
 .subscribe-button {
-     text-decoration: none;
-     color: var(--primary-opacity);
+    text-decoration: none;
+    color: var(--primary-opacity);
 }
 
 .login-button {
@@ -99,21 +99,19 @@ ul li {
     gap: 12px;
 
     margin-bottom: 20px;
-    
+
 }
 
 ul {
-   list-style: none;
+    list-style: none;
 }
 
 .logo {
-    color: var(--primary); 
+    color: var(--primary);
     margin-bottom: 25px;
 }
 
-.menu-lateral-opcoes {
-    
-}
+.menu-lateral-opcoes {}
 
 .menu-principal {
     margin-bottom: 20px;
@@ -125,7 +123,7 @@ ul {
 
 
 
-.music-list-container {  
+.music-list-container {
     margin-bottom: 50px;
 }
 
@@ -133,7 +131,7 @@ ul {
     display: flex;
     justify-content: space-between;
 
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 .music-list-container header a {
@@ -184,7 +182,7 @@ ul {
 
 .music-list-card .detail {
     color: var(--primary);
-     text-align: left;
+    text-align: left;
 }
 
 footer {
@@ -195,6 +193,6 @@ footer {
 
     padding: 25px;
 
-    background-image: linear-gradient(to right,#af2896,#509bf5);
+    background-image: linear-gradient(to right, #af2896, #509bf5);
     color: var(--primary);
 }
