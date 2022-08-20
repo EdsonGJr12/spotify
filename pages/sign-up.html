@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://open.spotifycdn.com/cdn/images/favicon.5cb2bd30.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/sign-up.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        class="logo"
+        src="../assets/svg/logo-dark.svg"
+        alt="Logo do spotify"
+      />
+      <h1>Inscreva-se grátis e comece a curtir.</h1>
+      <form action="">
+        <div class="input-group">
+          <label for="email">Qual é o seu e-mail?</label>
+          <input type="email" name="email" placeholder="Insira o seu e-mail." />
+        </div>
+        <div class="input-group">
+          <label for="emailConfirm">Confirme seu e-mail:</label>
+          <input
+            type="email"
+            name="emailConfirm"
+            placeholder="Insira o seu e-mail novamente."
+          />
+        </div>
+        <div class="input-group">
+          <label for="password">Crie uma senha:</label>
+          <input
+            type="password"
+            name="password"
+            placeholder="Crie uma senha."
+          />
+        </div>
+        <div class="input-group">
+          <label for="name">Como devemos chamar você?</label>
+          <input type="text" name="name" placeholder="Insira o seu nome." />
+          <p>isso aparece no seu perfil.</p>
+        </div>
+        <div class="input-group">
+          <label for="birthdate">Qual a sua data de nascimento?</label>
+          <input
+            type="date"
+            name="birthdate"
+            placeholder="Insira a sua data de nascimento."
+          />
+        </div>
+        <div class="input-group">
+          <label for="country">Qual o seu gênero?</label>
+          <div class="options">
+            <input
+              type="radio"
+              id="man"
+              name="fav_language"
+              value="Masculino"
+            />
+            <label for="man">Masculino</label><br />
+            <input
+              type="radio"
+              id="woman"
+              name="fav_language"
+              value="Feminino"
+            />
+            <label for="woman">Feminino</label><br />
+            <input
+              type="radio"
+              id="nonBinary"
+              name="fav_language"
+              value="Não binário"
+            />
+            <label for="nonBinary">Não binário</label>
+          </div>
+        </div>
+        <div class="input-group">
+          <div class="checkbox">
+            <input class="block" type="checkbox" id="horns" name="horns" />
+            <label for="horns"
+              >Não quero receber mensagens de marketing do Spotify</label
+            >
+          </div>
+          <div class="checkbox">
+            <input class="block" type="checkbox" id="horns" name="horns" />
+            <label for="horns"
+              >Compartilhar meus dados cadastrais com os provedores de conteúdo
+              do Spotify para fins de marketing.</label
+            >
+          </div>
+          <div class="checkbox">
+            <input class="block" type="checkbox" id="horns" name="horns" />
+            <label for="horns"
+              >Eu concordo com os
+              <a href="">Termos e Condições de Uso do Spotify.</a></label
+            >
+          </div>
+        </div>
+        <p>
+          Para saber mais sobre como o Spotify coleta, utiliza, compartilha e
+          protege seus dados pessoais, leia a
+          <a href="">Política de Privacidade do Spotify</a>.
+        </p>
+        <button type="submit">Inscrever-se</button>
+        <p>Já tem uma conta? <a href="">Faça login</a>.</p>
+      </form>
+    </div>
+  </body>
+</html>
