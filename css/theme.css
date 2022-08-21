@@ -4,6 +4,7 @@
     --secondary: #121212;
     --secondary-opacity: rgba(0, 0, 0, .5);
     --terciary: #000;
+    --background-tinted-press: hsla(0, 0%, 100%, .04);
 }
 
 * {
