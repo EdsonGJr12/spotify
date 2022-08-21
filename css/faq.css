@@ -16,6 +16,20 @@
 
 
 
+@media screen and (min-width: 1000px) {
+    :root {
+        --sides-padding: 20%;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    :root {
+        --sides-padding: 10%;
+    }
+}
+
+
+
 .container {
     width: 100vw;
     height: 100vh;
@@ -169,6 +183,17 @@ ul {
     gap: 15px;
     margin-top: 5%;
 }
+
+@media screen and (max-width: 1000px) {
+    .faq-categories {
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+        display: grid;
+        justify-items: center;
+        gap: 15px;
+        margin-top: 5%;
+    }
+}
+
 
 @media screen and (max-width: 1000px) {
     .faq-categories {
