@@ -15,20 +15,29 @@
   </head>
   <body>
     <div class="container">
-      <img
-        class="logo"
-        src="../assets/svg/logo-dark.svg"
-        alt="Logo do spotify"
-      />
-      <h1>Inscreva-se grátis e comece a curtir.</h1>
-      <form action="">
+      <div class="header">
+        <img
+          class="logo"
+          src="../assets/svg/logo-dark.svg"
+          alt="Logo do spotify"
+        />
+        <h1 class="title">Inscreva-se grátis e comece a curtir.</h1>
+      </div>
+      <div id="line"><hr  /></div>
+      <form class="teste" action="">
         <div class="input-group">
           <label for="email">Qual é o seu e-mail?</label>
-          <input type="email" name="email" placeholder="Insira o seu e-mail." />
+          <input
+            class="text-input"
+            type="email"
+            name="email"
+            placeholder="Insira o seu e-mail."
+          />
         </div>
         <div class="input-group">
           <label for="emailConfirm">Confirme seu e-mail:</label>
           <input
+            class="text-input"
             type="email"
             name="emailConfirm"
             placeholder="Insira o seu e-mail novamente."
@@ -37,6 +46,7 @@
         <div class="input-group">
           <label for="password">Crie uma senha:</label>
           <input
+            class="text-input"
             type="password"
             name="password"
             placeholder="Crie uma senha."
@@ -44,12 +54,18 @@
         </div>
         <div class="input-group">
           <label for="name">Como devemos chamar você?</label>
-          <input type="text" name="name" placeholder="Insira o seu nome." />
-          <p>isso aparece no seu perfil.</p>
+          <input
+            class="text-input" 
+            type="text"
+            name="name"
+            placeholder="Insira o seu nome."
+          />
+          <p class="custom-mt-5">Isso aparece no seu perfil.</p>
         </div>
         <div class="input-group">
           <label for="birthdate">Qual a sua data de nascimento?</label>
           <input
+            class="text-input"
             type="date"
             name="birthdate"
             placeholder="Insira a sua data de nascimento."
@@ -57,31 +73,37 @@
         </div>
         <div class="input-group">
           <label for="country">Qual o seu gênero?</label>
-          <div class="options">
-            <input
-              type="radio"
-              id="man"
-              name="fav_language"
-              value="Masculino"
-            />
-            <label for="man">Masculino</label><br />
-            <input
-              type="radio"
-              id="woman"
-              name="fav_language"
-              value="Feminino"
-            />
-            <label for="woman">Feminino</label><br />
-            <input
-              type="radio"
-              id="nonBinary"
-              name="fav_language"
-              value="Não binário"
-            />
-            <label for="nonBinary">Não binário</label>
+          <div class="options has-text-weight-normal">
+            <span>
+              <input
+                type="radio"
+                id="man"
+                name="fav_language"
+                value="Masculino"
+              />
+              <label for="man">Masculino</label>
+            </span>
+            <span>
+              <input
+                type="radio"
+                id="woman"
+                name="fav_language"
+                value="Feminino"
+              />
+              <label for="woman">Feminino</label>
+            </span>
+            <span>
+              <input
+                type="radio"
+                id="nonBinary"
+                name="fav_language"
+                value="Não binário"
+              />
+              <label for="nonBinary">Não binário</label>
+            </span>
           </div>
         </div>
-        <div class="input-group">
+        <div class="checkbox-group has-text-weight-normal">
           <div class="checkbox">
             <input class="block" type="checkbox" id="horns" name="horns" />
             <label for="horns"
@@ -103,13 +125,15 @@
             >
           </div>
         </div>
-        <p>
+        <p class="terms">
           Para saber mais sobre como o Spotify coleta, utiliza, compartilha e
           protege seus dados pessoais, leia a
           <a href="">Política de Privacidade do Spotify</a>.
         </p>
-        <button type="submit">Inscrever-se</button>
-        <p>Já tem uma conta? <a href="">Faça login</a>.</p>
+        <span class="submit">
+          <button class="button" type="submit">Inscrever-se</button>
+          <p>Já tem uma conta? <a href="">Faça login</a>.</p>
+        </span>
       </form>
     </div>
   </body>
