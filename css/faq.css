@@ -1,11 +1,26 @@
 :root {
-    --sides-padding: 25%;
+    --sides-padding: 15%;
 }
+
+@media screen and (min-width: 1000px) {
+    :root {
+        --sides-padding: 20%;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    :root {
+        --sides-padding: 10%;
+    }
+}
+
+
 
 .container {
     width: 100vw;
     height: 100vh;
     background-color: var(--secondary);
+
 
     overflow-x: hidden;
 }
@@ -74,19 +89,6 @@ main>header {
     width: 100px;
     border-radius: 20px;
     text-align: center;
-}
-
-ul li {
-    color: var(--primary-opacity);
-    font-size: 14px;
-    font-weight: bold;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 12px;
-
-    margin-bottom: 20px;
 }
 
 ul {
@@ -161,34 +163,50 @@ ul {
 }
 
 .faq-categories {
-    grid-template-columns: repeat(3, minmax(0px, 1fr));
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
     display: grid;
     justify-items: center;
-    gap: 50px;
+    gap: 15px;
     margin-top: 5%;
 }
 
+@media screen and (max-width: 1000px) {
+    .faq-categories {
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+        display: grid;
+        justify-items: center;
+        gap: 15px;
+        margin-top: 5%;
+    }
+}
+
+
 .faq-categorie-card {
-    height: 100px;
-    width: 250px;
+    max-height: 300px;
+    max-width: 500px;
+    min-height: 100%;
+    min-width: 100%;
     border-radius: 10px;
     padding: 16px;
     background-color: #181818;
+    overflow: hidden;
 
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
 
-    gap: 10px;
+    gap: 5px;
 
     cursor: pointer;
 }
 
 .faq-categorie-card .card-img {
     border-radius: 10px;
-    width: 100px;
-    height: 100px;
+    max-width: 100px;
+    max-height: 300px;
+    width: 100%;
+    height: 100%;
     transform: rotate(25deg);
 }
 
@@ -201,6 +219,64 @@ ul {
 .faq-categorie-card .detail {
     color: var(--primary);
     text-align: left;
+    width: 100%;
+    height: 100%;
+}
+
+.faq-help-links-container {
+    background-color: var(--background-tinted-base, rgba(0, 0, 0, 0.08));
+    width: 100%;
+}
+
+.faq-help-links-title {
+    font-size: 22px;
+    color: #e8e6e3;
+    margin-bottom: 20px;
+}
+
+.faq-help-links-container h2 {
+    --margin-tb: 30px;
+    margin-top: var(--margin-tb);
+    margin-bottom: var(--margin-tb);
+}
+
+.faq-help-link-items-list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.faq-help-link-items-list>* {
+    flex: 50%;
+}
+
+.faq-help-link-item {
+    color: var(--primary-opacity);
+    font-size: 14px;
+    font-weight: bold;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+
+    justify-content: space-between;
+}
+
+.faq-help-link-text {
+    text-decoration: none;
+    color: #e8e6e3;
+}
+
+.faq-help-link-arrow-icon {
+    width: 17px;
+    height: 17px;
+}
+
+.faq-help-link-text:hover {
+    text-decoration: underline;
 }
 
 .faq-categorie-card#card-ajuda-com-pagamentos {
@@ -225,4 +301,48 @@ ul {
 
 .faq-categorie-card#card-ajuda-com-a-conta {
     background-color: rgb(66, 98, 129);
+}
+
+.visite-nossa-comunidade-container {
+    margin-top: 30px;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #e8e6e3;
+}
+
+.visite-nossa-comunidade-titulo {
+    text-align: center;
+    font-size: 40px;
+}
+
+.visite-nossa-comunidade-pergunta {
+    text-align: center;
+}
+
+.link-botao-acesse-a-comunidade {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.botao-acesse-a-comunidade {
+    max-width: 500px;
+    font-weight: 700;
+    text-align: center;
+    user-select: none;
+    line-height: 20px;
+    text-transform: none;
+    letter-spacing: normal;
+    box-sizing: border-box;
+    position: relative;
+    background-color: var(--background-base, #1ed760);
+    color: var(--text-base, #000000);
+    border-radius: 500px;
+    font-size: inherit;
+    padding-block: 14px;
+    padding-inline: 32px;
+    --background-base: #1ed760;
 }
